@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+  <title>Ayush Agarwal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- *****Navbar***** -->
+
+  <nav id="navbar">
+    <div class="logo"><a href="">
+        <h3>
+          <span style="color:rgb(13, 9, 231)">Ayush</span> Agarwal
+        </h3>
+      </a>
+    </div>
+
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="burger" onclick="toggleMenu();">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+
+  </nav>
+
+
+  <div class="toggle" onclick="toggleMenu();">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+  </div>
+
+  <!-- *****Navbar***** -->
+
+
+
+  <!-- *****COntent about***** -->
+
+
+  <section class="about">
+
+
+    <div class="about-image">
+      <img src="sample.png" alt="">
+    </div>
+
+
+
+
+    <div class=" about-info">
+      <div class="info">
+        <h1>Hi I'm <span>Ayush Agarwal</span>
+        </h1>
+        <!-- <h3>Founder of UXDesigner</h3> -->
+        <h6> Currently Pursuing BTech in Computer Science,<br>
+          Techno India University,<br>
+          Kolkata, India</h6>
+        <p> +91 8789909350</p>
+      </div>
+
+
+      <div class="about_social">
+        <a href="https://www.instagram.com" class="social_icon">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com" class="social_icon">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="https://www.linkedin.com" class="social_icon">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com" class="social_icon">
+          <i class="fa fa-twitter"></i>
+        </a>
+
+        <a href="https://github.com/" class="social_icon">
+          <i class="fa fa-github"></i>
+        </a>
+
+
+      </div>
+
+      <button class="button">Download Resume</button>
+
+    </div>
+
+  </section>
+  <!-- *****COntent about***** -->
+  <section class="education" id="about">
+    <div class="head">
+      <h1>Education</h1>
+    </div>
+    <hr>
+    <div class="edu-div">
+      <div class="edu-1">
+        <div class="logo1">
+          <img src="logo1.jpg" alt="">
+        </div>
+        <div class="info1">
+          <h1>Kerala Public School</h1>
+          <p>Primary & Secondary College</p>
+          <p>2006-2019</p>
+        </div>
+
+      </div>
+
+
+      <div class="edu-1">
+        <div class="logo1">
+          <img src="logo2.png" alt="">
+        </div>
+        <div class=" info1">
+          <h1>Kerala Public School</h1>
+          <p>High School</p>
+          <p>2019-2021</p>
+        </div>
+
+      </div>
+
+
+
+      <div class="edu-1">
+        <div class="logo1">
+          <img src="logo3.png" alt="">
+        </div>
+        <div class="info1">
+          <h1>Techno India University</h1>
+          <p>BTech in Computer Science and Engineering</p>
+          <p>2021-2025</p>
+        </div>
+
+      </div>
+      </dv>
+
+  </section>
+
+  <!-- <div class="footer">
+    <i class="fa fa-envelope"></i>
+    <p>nithishr81@gmail.com</p>
+  </div> -->
+
+
+  <script>
+    {
+      const nav = document.querySelector("#navbar");
+      let lastScrollY = window.scrollY;
+
+      window.addEventListener("scroll", () => {
+        if (lastScrollY < window.scrollY) {
+          nav.classList.add("nav--hidden");
+
+        } else {
+          nav.classList.remove("nav--hidden");
+        }
+
+        lastScrollY = window.scrollY;
+      });
+    }
+
+  </script>
+
+  <script>
+    function toggleMenu() {
+      var menuToggle = document.querySelector('.burger');
+      var menu = document.querySelector('.toggle');
+      menuToggle.classList.toggle('active');
+      menu.classList.toggle('active');
+
+    }
+  </script>
+
+
+
+</body>
+
+</html>
